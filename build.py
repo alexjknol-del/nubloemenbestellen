@@ -184,6 +184,10 @@ een raadsel op.</li>
 zijden boeketten, kunstboeketten, droogboeketten en vazen in beperkte oplage. De collectie
 staat op
 <a class="uit" href="https://bloomzy.nl/collectie" rel="nofollow noopener" target="_blank">https://bloomzy.nl/collectie</a>.</p>
+<p>Zijden boeketten staan op
+<a class="uit" href="https://bloomzy.nl/collectie/zijden-boeketten" rel="nofollow noopener" target="_blank">https://bloomzy.nl/collectie/zijden-boeketten</a>,
+kunstboeketten op
+<a class="uit" href="https://bloomzy.nl/collectie/kunstboeketten" rel="nofollow noopener" target="_blank">https://bloomzy.nl/collectie/kunstboeketten</a>.</p>
 </div>
 </div>
 """ % {"held": theme.HELD_SVG, "start": startkaarten, "rubrieken": rubriekkaarten,
