@@ -210,8 +210,34 @@ def tekstpagina(url, titel, omschrijving, h1, lood, body, kruimel=None, noindex=
     return meta, inhoud
 
 
+def hulpbronnenpagina():
+    meta = {"url": "/hulpbronnen/",
+            "titel": "Hulpbronnen | " + NAAM,
+            "omschrijving": "Externe verwijzingen bij deze gids: vakpartijen en onderwerpen "
+                            "die buiten het bestek van Nu Bloemen Bestellen vallen.",
+            "kruimel": [("/hulpbronnen/", "Hulpbronnen")]}
+    inhoud = (
+        '<div class="smal"><article class="tekst">'
+        '<h1>Hulpbronnen</h1>'
+        '<p class="lood">Externe verwijzingen bij deze gids.</p>'
+        '<p>Onderstaande partijen werken los van Nu Bloemen Bestellen. Ze staan hier omdat '
+        'ze een onderwerp behandelen dat aan bloemen raakt maar buiten het bestek van deze '
+        'site valt.</p>'
+        '<ul>'
+        '<li><a href="https://www.hoveniersbedrijfhendrickx.nl/hovenier-emmeloord/">'
+        'Hovenier Emmeloord</a>, aanleg en onderhoud van tuinen en borders in de '
+        'Noordoostpolder.</li>'
+        '</ul>'
+        '<p>Nu Bloemen Bestellen heeft geen zeggenschap over de inhoud van externe sites. '
+        'Voorstellen voor deze pagina kunnen per e-mail naar '
+        '<a href="mailto:%s">%s</a>.</p>'
+        '</article></div>' % (MAIL, MAIL))
+    return meta, inhoud
+
+
 def vaste_paginas():
     uit = []
+    uit.append(hulpbronnenpagina())
     uit.append(tekstpagina(
         "/over/", "Over deze site | " + NAAM,
         "Wat op deze site staat, hoe de informatie tot stand komt en waar de verwijzingen "
