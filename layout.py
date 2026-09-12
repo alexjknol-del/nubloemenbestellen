@@ -26,6 +26,7 @@ VOET = [
                      ("/nieuws/", "Nieuws")]),
     ("Deze site", [("/over/", "Over deze site"),
                    ("/contact/", "Contact"),
+                   ("/hulpbronnen/", "Hulpbronnen"),
                    ("/sitemap/", "Sitemap"),
                    ("/privacybeleid/", "Privacybeleid"),
                    ("/cookiebeleid/", "Cookiebeleid")]),
